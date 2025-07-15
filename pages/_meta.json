@@ -1,5 +1,14 @@
 {
   "index": "Introduction",
+  "api-and-tools": "API and Tools",
+  "software-docs": "Software Docs",
+  "developers": "Developers",
+  "hardware": "Hardware",
+  "print-templates": "Print Templates",
+  "videos": "Videos",
+  "book-publishing": "Book Publishing",
+  "html-designs": "HTML Designs",
+  "about-me": "About me",
   "another": "Another Page",
   "advanced": "Advanced (A Folder)",
   "about": {
@@ -11,16 +20,5 @@
     "type": "page",
     "href": "https://twitter.com/shuding_",
     "newWindow": true
-  },
-  {
-    "api-and-tools": "API and Tools",
-    "software-docs": "Software Docs",
-    "developers": "Developers",
-    "hardware": "Hardware",
-    "print-templates": "Print Templates",
-    "videos": "Videos",
-    "book-publishing": "Book Publishing",
-    "html-designs": "HTML Designs",
-    "about-me": "About me"
   }
 }
