@@ -9,8 +9,7 @@
   "book-publishing": "Book Publishing",
   "html-designs": "HTML Designs",
   "about-me": "About me",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  
   "about": {
     "title": "About",
     "type": "page"
