@@ -32,7 +32,7 @@ To configure Single Sign-On SAML 2.0, follow these steps:
    - **UKG Ready™ Customers**:  
      Navigate to **Global Setup > Company Setup**, go to the **Login Config** tab (or add the Login/Logout Preferences widget to any tab), and check **Enable Single Sign-On (SAML 2.0)**.  
 
-   ![Login/Logout Preferences](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2.png)
+   ![Login/Logout Preferences](./SingleSignOnSAML20OAuth2.png)
 
 3. **Provide Service Provider Information to IdP**  
    To enable identity providers to begin SSO configuration, provide them with:  
@@ -58,7 +58,7 @@ To configure Single Sign-On SAML 2.0, follow these steps:
 4. **Export Service Provider Metadata**  
    After setting the Unique Audience URL, generate an XML file for the IdP by clicking **Export Service Provider Metadata**. If the IdP cannot import XML, manually enter the information from the **Service Provider Information** section.  
 
-   ![Export Metadata](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_1.png)
+   ![Export Metadata](./SingleSignOnSAML20OAuth2_1.png)
 
 5. **Configure Additional Settings**  
    - **Redirect URL For Login**: The Single Sign-On Service URL provided by the IdP (required for SP-Initiated SSO).  
@@ -67,9 +67,9 @@ To configure Single Sign-On SAML 2.0, follow these steps:
    - **URL To Show On Logout**: Post-logout redirect URL.  
    - **Session Validation URL**: For older SSO versions (remote login).  
    - **Import Metadata From Identity Provider**: Uploads IdP-provided Entity ID, Redirect URL, and X.509 Certificate.  
-     ![Import Metadata](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_2.png)  
+     ![Import Metadata](./SingleSignOnSAML20OAuth2_2.png)  
    - **Set Login URL For SP-Initiated SSO**: Overrides Redirect URL with imported metadata.  
-     ![SP-Initiated SSO](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_3.png)  
+     ![SP-Initiated SSO](./SingleSignOnSAML20OAuth2_3.png)  
    - **Entity ID of Identity Provider**: Your IdP’s unique identifier.  
    - **Error Handling**: Configure Error URL and parameter names for error messages/numbers.  
    - **Upload X.509 Certificate**: Manually upload the IdP-provided certificate.  
@@ -121,7 +121,7 @@ Placeholders:
 ### E-Signatures  
 To avoid confusion, configure the **Electronic Signature Uses** field (under **Signature Settings** widget) to use a field other than `Password`.  
 
-![Signature Settings](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_4.png)  
+![Signature Settings](./SingleSignOnSAML20OAuth2_4.png)  
 
 ---
 
@@ -129,22 +129,22 @@ To avoid confusion, configure the **Electronic Signature Uses** field (under **S
 - **SAML 2.0 Errors**: Check **System Events** report (`Company Settings > System > Events`).  
 - **Username Issues**: View **Global Access** report (`My Info > My Reports > System Reports`).  
 
-![Error Reports](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_5.png)  
+![Error Reports](./SingleSignOnSAML20OAuth2_5.png)  
 
 ---
 
 ### Multi-Tenant IDP (Partner Resellers Only)  
 Enable **Multi-Tenant IDP** at the Partner Admin Company Level to use a global IdP. The IdP must send the company short name via a `companyId` SAML attribute.  
 
-![Multi-Tenant IDP](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_6.png)  
+![Multi-Tenant IDP](./SingleSignOnSAML20OAuth2_6.png)  
 
 ---
 
 ### Google SSO on Mobile App  
 Requires **Google Cloud Integration Marketplace** product (domain must match company domain). Users must log in with their company Google account (consumer accounts unsupported).  
 
-![Google SSO Setup](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_7.png)  
-![Google SSO Login](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_8.png)  
+![Google SSO Setup](./SingleSignOnSAML20OAuth2_7.png)  
+![Google SSO Login](./SingleSignOnSAML20OAuth2_8.png)  
 
 
 
@@ -220,7 +220,7 @@ Sign-On (SAML 2.0) section:
   Preferences** widget in the **Global Setup** \> **Company
   Information** page.
 
-![](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_9.png)
+![](./SingleSignOnSAML20OAuth2_9.png)
 
 #### Multiple X.509 Certificates
 
@@ -289,7 +289,7 @@ into the ADFS server. 
     you can click OK, then save and upload the exported file into the
     system using the **Upload X.509 Certificate** option.
 
-    ![](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_10.png)
+    ![](./SingleSignOnSAML20OAuth2_10.png)
     
 ### Configuring Relying Party Trust Information
 
@@ -311,7 +311,7 @@ Preferences** widget, you can upload the file. Within the **Relying
 Party Trust** wizard, choose **Select Data Source** and upload the file
 using the **Import data about the relying party from a file** option.
 
-![](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_11.png)
+![](./SingleSignOnSAML20OAuth2_11.png)
 
 For **Display** name, enter any name (for example, **Trusted Resource**)
 and click the **Next** button.
@@ -335,7 +335,7 @@ Trust** wizard.
 3.  For the **Configure Certificate** section, click the **Next** button
     as the system does not support a token encryption certificate.
 
-    ![](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_12.png)
+    ![](./SingleSignOnSAML20OAuth2_12.png)
     
 4.  For the **Configure URL** section, check **Enable support for SAML
     2.0 Web SSO protocol**. For the **Relying party SAML 2.0 SSO**
@@ -343,7 +343,7 @@ Trust** wizard.
     Endpoint URL shown in the **Service Provider Information** in the
     **Login/Logout Preferences** widget.
 
-    ![](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_13.png)
+    ![](./SingleSignOnSAML20OAuth2_13.png)
     
 5.  Click the **Next** button.
 
@@ -353,7 +353,7 @@ Trust** wizard.
     the **Service Provider Information** in the **Login/Logout
     Preferences** screen, for example: <https://secure2.saashr.com>
 
-    ![](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_14.png)
+    ![](./SingleSignOnSAML20OAuth2_14.png)
     
 7.  Click the **Add** button then click the **Next** button.
 
@@ -392,7 +392,7 @@ matching case when configuring the claim names.
 6.  In the **Outgoing Claim Type** section, drop down and select **Name
     ID**.
 
-    ![](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_15.png)
+    ![](./SingleSignOnSAML20OAuth2_15.png)
     
 7.  Click the **Finish** button.
 
@@ -440,19 +440,19 @@ Enable OAuth 2.0 in the **Available Functionality** widget of your
 company. Check the OAuth Configuration checkbox, save and then log in as
 SA. This will make the widget available in Company Setup.
 
-![](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_16.png)
+![](./SingleSignOnSAML20OAuth2_16.png)
 
 Navigate **to Company Settings \> Global Setup \> Company Setup**. From
 **Edit Tabs**, locate and drag the OAuth Configuration widget to the tab
 of your choice and save.
 
-![](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_17.png)
+![](./SingleSignOnSAML20OAuth2_17.png)
 
 From the widget, select Add New to create a new tenant.
 
-![](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_18.png)
+![](./SingleSignOnSAML20OAuth2_18.png)
 
-![](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_19.png)
+![](./SingleSignOnSAML20OAuth2_19.png)
 
 With the exception of the **Account Reference** fields, the remaining
 fields will come from the authorization server. There are multiple OAuth
@@ -503,12 +503,12 @@ Consider these differences between the two options.
 Also, be aware of the different definitions for the same terms between
 the two options.
 
-![](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_20.png)
+![](./SingleSignOnSAML20OAuth2_20.png)
 
 ### SAML 2.0 Flow
 
-![](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_21.png)
+![](./SingleSignOnSAML20OAuth2_21.png)
 
 ### OAuth 2.0 Flow
 
-![](./Resources/Images/SingleSignOnSAML20OAuth20/SingleSignOnSAML20OAuth2_22.png)
+![](./SingleSignOnSAML20OAuth2_22.png)
