@@ -23,9 +23,9 @@ To configure Single Sign-On SAML 2.0, follow these steps:
 2. **Enable Single Sign-On (SAML 2.0)**  
    The **Enable Single Sign-On (SAML 2.0)** option within the **Login/Logout Preferences** widget will need to be enabled.  
 
-   - **UKG Ready™ Partners**:  
+   - **UKG Ready Partners**:  
      Navigate to **Maintenance > Companies > All System Companies**, click the **Edit Company** icon, and check **Enable Single Sign-On (SAML 2.0)** within the **Login/Logout Preferences** widget.  
-   - **UKG Ready™ Customers**:  
+   - **UKG Ready Customers**:  
      Navigate to **Global Setup > Company Setup**, go to the **Login Config** tab (or add the Login/Logout Preferences widget to any tab), and check **Enable Single Sign-On (SAML 2.0)**.  
 
    ![Login/Logout Preferences](./SingleSignOnSAML20OAuth2.png)
@@ -66,7 +66,7 @@ To configure Single Sign-On SAML 2.0, follow these steps:
      ![Import Metadata](./SingleSignOnSAML20OAuth2_2.png)  
    - **Set Login URL For SP-Initiated SSO**: Overrides Redirect URL with imported metadata.  
      ![SP-Initiated SSO](./SingleSignOnSAML20OAuth2_3.png)  
-   - **Entity ID of Identity Provider**: Your IdP’s unique identifier.  
+   - **Entity ID of Identity Provider**: Your IdP\'s unique identifier.  
    - **Error Handling**: Configure Error URL and parameter names for error messages/numbers.  
    - **Upload X.509 Certificate**: Manually upload the IdP-provided certificate.  
 
@@ -89,8 +89,8 @@ To configure Single Sign-On SAML 2.0, follow these steps:
 
 ### Sample SAML Response  
 Placeholders:  
-- `[[IDP_ENTITY_ID]]`: Identity Provider’s Entity ID.  
-- `[[COMPANY_SHORT_NAME]]`: Your company’s short name.  
+- `[[IDP_ENTITY_ID]]`: Identity Provider\'s Entity ID.  
+- `[[COMPANY_SHORT_NAME]]`: Your company\'s short name.  
 - `[[USERNAME]]`: Valid employee username.  
 
 ```xml
@@ -146,7 +146,7 @@ Requires **Google Cloud Integration Marketplace** product (domain must match com
 
 This section is provided for the convenience of our users who use
 Microsoft ADFS and/or Azure for SSO. It is not intended to be used for a
-complete deployment, troubleshooting, or configuration guide.  For
+complete deployment, troubleshooting, or configuration guide. For
 technical support regarding these Microsoft products, a wealth of
 information is available at Microsoft and other sites, including:
 
@@ -203,10 +203,10 @@ where \<server\> is the ADFS server.
 The metadata must then be imported to the system in the Enable Single
 Sign-On (SAML 2.0) section:
 
-- **UKG Ready™ Partners**: This is done in the **Login/Logout
+- **UKG Ready Partners**: This is done in the **Login/Logout
   Preferences** widget in the **Company Information** page.
 
-- **UKG Ready™ Customers**: This is done in the **Login/Logout
+- **UKG Ready Customers**: This is done in the **Login/Logout
   Preferences** widget in the **Global Setup** \> **Company
   Information** page.
 
@@ -240,7 +240,7 @@ is always enabled and all expired certificates are always shown.
 ### Manual Process (Not recommended)
 
 As an alternative, the certificate can be downloaded directly by logging
-into the ADFS server. 
+into the ADFS server.
 
 1.  Start the Microsoft Management Console.
 
@@ -285,7 +285,7 @@ into the ADFS server. 
 
 The ADFS 2.0 Management snap-in will be used to configure Relying Party
 Trust Information. From that tool, you can navigate to **ADFS 2.0 \>
-Trust Relationships \> Relying Party Trusts**.  You'll need to
+Trust Relationships \> Relying Party Trusts**. You'll need to
 right-click on **Relying Party Trusts** and select **Add Relying Party
 Trust**.
 
