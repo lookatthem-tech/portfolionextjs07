@@ -1,14 +1,6 @@
 {
   "index": "About me",
-  "api-and-tools": "API and Tools",
-  "software-docs": "Software Docs",
-  "developers": "Developers",
-  "hardware": "Hardware",
-  "PrintTemplates": "Print Templates",
-  "videos": "Videos",
-  "book-publishing": "Book Publishing",
-  "html-designs": "HTML Designs",
-    
+      
   "about": {
     "title": "About",
     "type": "page"
