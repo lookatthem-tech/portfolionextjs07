@@ -4,8 +4,7 @@ Single sign-on (SSO) is a user authentication process that permits a
 user to enter a username and password once per session to access
 multiple applications. A designated application provided by an
 **Identity Provider (IdP)** must authenticate the user. The applications
-that rely on the IdP to authenticate users are known as **Service
-Providers (SP)**. The system supports Identity Provider-initiated and
+that rely on the IdP to authenticate users are known as **Service Providers (SP)**. The system supports Identity Provider-initiated and
 Service Provider Single Sign-On using the HTTP POST binding.
 
 
@@ -196,8 +195,7 @@ approaches can be used.
 
 The recommended approach requires fewer manual steps. In this approach,
 the certificate is contained in the metadata XML file. The metadata can
-be downloaded from
-https://\<server\>/federationmetadata/2007-06/federationmetadata.xml,
+be downloaded from `https://\<server\>/federationmetadata/2007-06/federationmetadata.xml`,
 where \<server\> is the ADFS server.
 
 The metadata must then be imported to the system in the Enable Single
@@ -341,7 +339,7 @@ Trust** wizard.
     system URLs. In the **Relying party trust identifier**, the system's
     SAML endpoint needs to be entered. This is the Audience URL shown in
     the **Service Provider Information** in the **Login/Logout
-    Preferences** screen, for example: <https://secure2.saashr.com>
+    Preferences** screen, for example: `<https://secure2.saashr.com>`
 
     ![](./SingleSignOnSAML20OAuth2_14.png)
     
@@ -395,7 +393,7 @@ matching case when configuring the claim names.
     of this assuming that the ADFS server name is adfs.example.com. The
     URL would be:
 
-    https://adfs.example.com/adfs/ls/IDPInitiatedSignon.aspx?LoginToRP=https://secure.entertimeonline.com
+    `https://adfs.example.com/adfs/ls/IDPInitiatedSignon.aspx?LoginToRP=https://secure.entertimeonline.com`
 
 
 ## Configuring Single Sign-On OAuth 2.0
@@ -459,7 +457,7 @@ complete this widget.
 - **Account Reference**: This is a required field. You can select
   Account ID, Employee ID, External ID, or Username. This is used to
   match the user account information to the User Identifier value from
-  the Access Token.
+  the Access Token. 
 
 - **Authorization URL**: The authorization URL generated for your
   company from the authorization server.
